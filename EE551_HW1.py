@@ -82,7 +82,7 @@ def dictionaries():
     # IMPLEMENT IT HERE
     info["jobs"].append("programmer")
     # Get the third job Grace has that you recently added
-    info["jobs"][2]
+    p=info["jobs"][2]
     # Use the sort() function to get sorted keys of amazing_grace in alphabetically ascending order
     a="amazing_grace"
     b=list(a)
