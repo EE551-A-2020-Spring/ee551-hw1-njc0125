@@ -10,7 +10,7 @@ def numbers_and_strings():
     """
     This is to review numbers and strings and basic operations.
     """
-    # Assign a string "EE551" to a variable x
+        # Assign a string "EE551" to a variable x
     x = "EE551"
 
     # Assign a string "Stevens" to a variable y
@@ -34,20 +34,21 @@ def lists():
     n = "Stevens is awesome"
     
     # Split variable n on a delimiter space into a list of substrings
-    list=n.split()
+    p=n.split()
     # Get all the items past the first of the third substring
-    all=list[-1][0:]
+    r=p[-1][0:]
     # Create a 3 x 3 matrix as nested list such that
     #   first row is [1, 4, 5]
     #   second row is [6, 10, 11]
     #   third row is [12, 17, 38]
     A=[[1,4,5],[6,10,11],[12,17,38]]
     # Collect the items in the last column of matrix A using list comprehension
-    matrix_last=A[-1]
+    c=[i[-1] for i in A]
     # Collect only the even items of the diagonal of matrix A using list comprehension
+
     #matrix_even=A[for matrix[i][i]
     r = []
-    [r.append(A[i][i]  for i in range(2)) if(A[i][i]%==0)]
+    d = [A[i][i]  for i in range(2) if A[i][i]%2 ==0]
     # We can convert a single character to its underlying integer code (e.g., its ASCII byte value)
     # by passing it to the built-in ord function. Generate a list of these integers to represent
     # each character of the string "Stevens" using list comprehension.
@@ -68,7 +69,7 @@ def dictionaries():
     f=a["fruit"]
     # Increase the quantity of f by 1
     # IMPLEMENT IT HERE
-    m["quantity"]+=1
+    a["quantity"]+=1
     # Create a nested dictionary where:
     #   name => {first_name => "Grace", last_name => "Hopper"} (a dictionary)
     #   jobs => ["scientist", "engineer"] (a list)
