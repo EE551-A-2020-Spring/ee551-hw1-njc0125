@@ -20,7 +20,7 @@ def numbers_and_strings():
     # What is the length of z?
     length=len(z)
     # Concatenate variable y with string " is good"
-    y+" is good"
+    y+=" is good" #y = y +""
     # Replace "good" with "awesome" in variable m and assign it to a new variable n
     m="awesome"
     n=y.replace("good",m)
@@ -45,17 +45,13 @@ def lists():
     # Collect the items in the last column of matrix A using list comprehension
     matrix_last=A[-1]
     # Collect only the even items of the diagonal of matrix A using list comprehension
-    matrix_even=A[1::2]
+    #matrix_even=A[for matrix[i][i]
+    r = []
+    [r.append(A[i][i]  for i in range(2)) if(A[i][i]%==0)]
     # We can convert a single character to its underlying integer code (e.g., its ASCII byte value)
-    ord("p")
-    ord("r")
-    ord("c")
-    ord("d")
-    ord("o")
     # by passing it to the built-in ord function. Generate a list of these integers to represent
-    listint=[ord("p"),ord("r"),ord("c"),ord("d"),ord("o")]
     # each character of the string "Stevens" using list comprehension.
-    p=list;r=all;c=matrix_last;d=matrix_even;o=listint
+    o = [ord(i) for i in "Stevnes"]
     return p, r, c, d, o
 
 
