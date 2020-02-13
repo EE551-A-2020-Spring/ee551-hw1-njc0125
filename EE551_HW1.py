@@ -18,7 +18,7 @@ def numbers_and_strings():
     # Repeat variable y 5 times
     z=y*5
     # What is the length of z?
-    lengh=len(z)
+    length=len(z)
     # Concatenate variable y with string " is good"
     y+" is good"
     # Replace "good" with "awesome" in variable m and assign it to a new variable n
